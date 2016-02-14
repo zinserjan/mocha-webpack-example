@@ -1,0 +1,23 @@
+{
+  "name": "mocha-webpack-example",
+  "version": "0.0.1",
+  "description": "example project for mocha-webpack",
+  "scripts": {
+    "test": "mocha-webpack --webpack-config webpack.config-test.js --colors --watch test_index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zinserjan/mocha-webpack-example"
+  },
+  "bugs": {
+    "url": "https://github.com/zinserjan/mocha-webpack-example/issues"
+  },
+  "author": "Jan-André Zinser",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "source-map-support": "^0.4.0",
+    "webpack": "^1.12.13",
+    "webpack-node-externals": "^0.4.1"
+  }
+}
