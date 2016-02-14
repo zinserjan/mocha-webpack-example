@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "example project for mocha-webpack",
   "scripts": {
-    "test": "mocha-webpack --webpack-config webpack.config-test.js --colors --watch test_index.js"
+    "test-watch": "mocha-webpack --webpack-config webpack.config-test.js --colors --watch test_index.js",
+    "test": "mocha-webpack --webpack-config webpack.config-test.js --colors test_index.js"
   },
   "repository": {
     "type": "git",
