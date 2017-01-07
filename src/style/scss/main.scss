@@ -1,0 +1,10 @@
+// This file will be build with sass
+
+// invalic css error
+.button
+  color: red;
+}
+
+
+// file to import not found
+@import "xyz.scss";

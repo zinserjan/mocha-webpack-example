@@ -1,0 +1,9 @@
+/* This file will be build with postcss */
+
+.button {
+  color: red;
+
+
+@import "test";
+@import "test2";
+@import "test3";
