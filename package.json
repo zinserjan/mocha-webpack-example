@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "description": "example project for mocha-webpack",
   "scripts": {
-    "test-watch": "mocha-webpack --webpack-config webpack.config-test.js --watch \"test/**/*.test.js\"",
-    "test": "mocha-webpack --webpack-config webpack.config-test.js --watch \"test/**/*.test.js\""
+    "test": "mocha-webpack --require setup.js --webpack-config webpack.config-test.js --watch \"test/**/*.test.js\""
   },
   "repository": {
     "type": "git",
@@ -26,6 +25,7 @@
     "eslint-loader": "^1.6.1",
     "eslint-plugin-import": "^2.2.0",
     "fake-style-loader": "^1.0.1",
+    "jsdom": "9.9.1",
     "json-loader": "^0.5.4",
     "less": "^2.7.2",
     "less-loader": "^2.2.3",
