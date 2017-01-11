@@ -4,6 +4,10 @@
 
 1. `npm install`
 
+**Note**: this works best with the latest mocha-webpack from github
+
+1. checkout mocha-webpack from github && `npm install && npm link && npm run build` inside it
+1. execute here `npm link mocha-webpack`
 
 ## testing
 
