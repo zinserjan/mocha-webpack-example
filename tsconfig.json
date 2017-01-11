@@ -6,6 +6,6 @@
     "noImplicitAny": true
   },
   "files": [
-    "typings/references.d.ts"
+    "typings/index.d.ts"
   ]
 }

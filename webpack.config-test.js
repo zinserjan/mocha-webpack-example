@@ -6,6 +6,8 @@ var nodeExternals = require('webpack-node-externals');
 
 const awesomeTsLoader = false;
 
+const coverage = process.env.NODE_ENV === 'coverage';
+
 var config = {
   resolve: {
     modules: [path.resolve('./src'), "node_modules"],
@@ -16,7 +18,13 @@ var config = {
     devtoolFallbackModuleFilenameTemplate: '[absolute-resource-path]?[hash]'
   },
   module: {
-    loaders: [
+    loaders: [].concat(
+      coverage ? {
+          test: /\.(js|ts)/,
+          exclude: /(node_modules|bower_components)/,
+          include: path.resolve('src'),  // instrument only testing sources with Istanbul, after ts-loader runs
+          loader: 'istanbul-instrumenter-loader'
+        }: [],
       {
         test: /.js$/,
         exclude: /(node_modules|bower_components)/,
@@ -51,7 +59,7 @@ var config = {
         test: /\.css$/,
         loaders: ['fake-style-loader', 'css-loader?importLoaders=1', 'postcss-loader']
       }
-    ],
+    ),
   },
   plugins: [
     new CheckerPlugin(),

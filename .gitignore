@@ -11,3 +11,6 @@ npm-debug.log
 # coverage
 .nyc_output
 coverage
+
+# ts
+typings
