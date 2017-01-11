@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "example project for mocha-webpack",
   "scripts": {
-    "test": "mocha-webpack --require setup.js --webpack-config webpack.config-test.js --watch \"test/**/*.test.js\""
+    "test": "mocha-webpack --watch"
   },
   "repository": {
     "type": "git",
