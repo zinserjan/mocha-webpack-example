@@ -42,7 +42,7 @@
     "less": "^2.7.2",
     "less-loader": "^2.2.3",
     "mocha": "^2.4.5",
-    "mocha-webpack": "0.0.1-alpha.2",
+    "mocha-webpack": "^1.0.0-beta.0",
     "node-sass": "^4.1.1",
     "nyc": "^10.0.0",
     "postcss-loader": "^1.2.1",
